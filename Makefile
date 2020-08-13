@@ -11,4 +11,4 @@ remove: stop
 	docker rm tba_container
 
 test:
-	docker run --rm tba_container python3 -m pytest
+	docker run --rm tba python3 -m pytest

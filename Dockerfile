@@ -9,6 +9,3 @@ RUN pip install -r /tmp/requirements.txt
 
 COPY tba /srv/tba
 WORKDIR /srv
-
-ENTRYPOINT ["python3"]
-CMD ["tba/app.py"]
