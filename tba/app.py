@@ -5,12 +5,12 @@ app = Flask(__name__)
 api = Api(app)
 
 
-class HelloWorld(Resource):
+class Health(Resource):
     def get(self):
-        return {'hello': 'world'}
+        return 'pong'
 
 
-api.add_resource(HelloWorld, '/')
+api.add_resource(Health, '/')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
